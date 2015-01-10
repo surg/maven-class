@@ -3,7 +3,6 @@ package com.yl.maven.decorator;
 import org.testng.annotations.Test;
 
 import static org.fest.assertions.Assertions.assertThat;
-import static org.testng.Assert.*;
 
 public class ItalicDecoratorTest {
     private ItalicDecorator decorator = new ItalicDecorator();

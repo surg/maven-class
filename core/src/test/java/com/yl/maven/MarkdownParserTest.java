@@ -1,8 +1,6 @@
 package com.yl.maven;
 
-import com.google.common.base.Charsets;
 import com.google.common.io.CharStreams;
-import com.google.common.io.Files;
 import org.testng.annotations.Test;
 
 import java.io.InputStreamReader;
@@ -10,7 +8,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import static org.fest.assertions.Assertions.assertThat;
-import static org.testng.Assert.*;
 
 public class MarkdownParserTest {
 

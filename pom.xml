@@ -7,29 +7,12 @@
     <groupId>com.yl</groupId>
     <artifactId>maven-class</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>18.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.8.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.easytesting</groupId>
-            <artifactId>fest-assert</artifactId>
-            <version>1.2</version>
-        </dependency>
-        <dependency>
-            <groupId>com.beust</groupId>
-            <artifactId>jcommander</artifactId>
-            <version>1.27</version>
-        </dependency>
-    </dependencies>
+    <modules>
+        <module>core</module>
+        <module>cli</module>
+        <module>web</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <build>
         <plugins>

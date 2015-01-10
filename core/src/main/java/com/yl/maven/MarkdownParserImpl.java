@@ -6,7 +6,6 @@ import com.google.common.collect.Lists;
 import com.yl.maven.decorator.LineDecorator;
 
 import java.util.Collection;
-import java.util.LinkedList;
 
 public class MarkdownParserImpl implements MarkdownParser {
     private Collection<LineDecorator> decorators;
