@@ -17,17 +17,12 @@ public class MarkdownParserImpl implements MarkdownParser {
 
     @Override
     public Collection<String> parse(Collection<String> strings) {
-        Collection<String> transformed = Collections2.transform(strings, new Function<String, String>() {
+        return Collections2.transform(strings, new Function<String, String>() {
             @Override
             public String apply(String s) {
                 return applyDecorators(s);
             }
         });
-        Collection<String> result = Lists.newArrayList("<html>", "<body>");
-        result.addAll(transformed);
-        result.add("</body>");
-        result.add("</html>");
-        return result;
     }
 
     private String applyDecorators(String s) {

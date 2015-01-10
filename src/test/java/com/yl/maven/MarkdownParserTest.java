@@ -6,6 +6,7 @@ import com.google.common.io.Files;
 import org.testng.annotations.Test;
 
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Collection;
 
 import static org.fest.assertions.Assertions.assertThat;
@@ -20,7 +21,7 @@ public class MarkdownParserTest {
         Collection<String> input = CharStreams.readLines(new InputStreamReader(getClass().getResourceAsStream("/sample.txt")));
         Collection<String> expected = CharStreams.readLines(new InputStreamReader(getClass().getResourceAsStream("/expected.txt")));
 
-        Collection<String> actual = parser.parse(input);
+        Collection<String> actual = new ArrayList<>(parser.parse(input));
 
         assertThat(actual).isEqualTo(expected);
     }
